@@ -1,0 +1,150 @@
+body {
+    display: block;
+    margin: 0;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+    line-height: 1.9;
+    letter-spacing: .08rem;
+    font-weight: normal;
+    color: #333;
+}
+/*header*/
+header {
+    display:block;
+    margin: 0 auto;
+    height:100px;
+    top: 0;
+    justify-content: space-between;
+    max-width: 1080px;
+    padding: 20px;  
+}
+
+.title-logo {
+    float:left;
+    font-size:35px;
+    position: relative;
+    padding: 15px;
+    
+}
+.drawer-list {
+    float:right;
+}
+
+.drawer-list li {
+    float:left;
+    list-style:none;
+    position:relative;
+    padding:20px;
+    font-size:20px;
+}
+
+.drawer-list li a {
+    text-decoration: none;
+    color:black;
+}
+/*header終わり*/
+/*top-content*/
+.top-content {
+    position:relative;
+    height:70vh;
+    max-width:1080px;
+    margin: 0 auto;
+}
+.top-content h1 {
+    position:absolute;
+    top:30%;
+    left:5%;
+    display:block;
+    font-size:40px;
+    font-weight:900;
+    z-index:9999;
+    letter-spacing:5px;
+}
+.top-content img {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+    top:10%;
+	right: 0;
+	width: 80%;
+	object-fit: cover;
+	height: 60vh;
+}
+/*top-content終わり*/
+/*about*/
+.about {
+    display:flex;
+    text-align: center;
+    margin-top:60px;
+    background-color: rgb(247,248,250);
+    max-width:1080px;
+    margin: 0 auto;
+}
+.about-text {
+    width:50%;
+}
+.about-text p {
+    font-size:10px;
+}
+.profile-image img {
+    width:50%;
+    padding-top:10px;
+}
+.about-text h2 {
+    font-size:20px;
+}
+.about-text ul li {
+    list-style: none;
+    float:left;
+    padding-right: 60px;   
+}
+.about-text ul {
+    display:inline-block;
+}
+/*about終わり*/
+/*works*/
+.title {
+    text-align: center;
+}
+
+.cafe-site {
+    width:70%;
+    height:100%;
+}
+.comingsoon {
+    width:70%;
+    height:100%;
+}
+.works-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    text-align: center;
+    max-width:1080px;
+    margin: 0 auto;
+}
+/*works終わり*/
+/*contact-form*/
+.contact-form {
+    text-align: center;
+}
+.contact-form a img {
+    width:5%;
+}
+/*contact-form終わり*/
+/*footer*/
+footer {
+    text-align: center;
+    margin-top:50px;
+    font-size:10px;
+}
+/*footer終わり*/
+
+
+
+
+ 
+
+
+
