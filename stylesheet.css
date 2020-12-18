@@ -124,10 +124,14 @@ header {
     max-width:1080px;
     margin: 0 auto;
 }
+.works-title {
+    font-size:13px;
+}
 /*works終わり*/
 /*contact-form*/
 .contact-form {
     text-align: center;
+    padding-top:20px;
 }
 .contact-form a img {
     width:5%;
@@ -140,11 +144,3 @@ footer {
     font-size:10px;
 }
 /*footer終わり*/
-
-
-
-
- 
-
-
-
