@@ -1,255 +1,150 @@
-html, body, div, span, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-abbr, address, cite, code,
-del, dfn, em, img, ins, kbd, q, samp,
-small, strong, sub, sup, var,
-b, i,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section, summary,
-time, mark, audio, video {
-    margin:0;
-    padding:0;
-    border:0;
-    outline:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
 body {
-    line-height:1;
+    display: block;
+    margin: 0;
+    background-color: #fff;
+    font-size: 15px;
+    font-family: '游ゴシック',YuGothic,'ヒラギノ角ゴ ProN W3','Hiragino Kaku Gothic ProN','メイリオ',Meiryo,sans-serif;
+    line-height: 1.9;
+    letter-spacing: .08rem;
+    font-weight: normal;
+    color: #333;
 }
-
-article,aside,details,figcaption,figure,
-footer,header,hgroup,menu,nav,section {
-    display:block;
-}
-
-nav ul {
-    list-style:none;
-}
-
-blockquote, q {
-    quotes:none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content:'';
-    content:none;
-}
-
-a {
-    margin:0;
-    padding:0;
-    font-size:100%;
-    vertical-align:baseline;
-    background:transparent;
-}
-
-/* change colours to suit your needs */
-ins {
-    background-color:#ff9;
-    color:#000;
-    text-decoration:none;
-}
-
-/* change colours to suit your needs */
-mark {
-    background-color:#ff9;
-    color:#000;
-    font-style:italic;
-    font-weight:bold;
-}
-
-del {
-    text-decoration: line-through;
-}
-
-abbr[title], dfn[title] {
-    border-bottom:1px dotted;
-    cursor:help;
-}
-
-table {
-    border-collapse:collapse;
-    border-spacing:0;
-}
-
-/* change border colour to suit your needs */
-hr {
-    display:block;
-    height:1px;
-    border:0;  
-    border-top:1px solid #cccccc;
-    margin:1em 0;
-    padding:0;
-}
-
-input, select {
-    vertical-align:middle;
-}
-
 /*header*/
 header {
-    background-color:rgb(211,175,160);
-}
-.header-inner {
+    display:block;
+    margin: 0 auto;
     height:100px;
-    width:80%;
-    margin:0 auto;
+    top: 0;
+    justify-content: space-between;
+    max-width: 1080px;
+    padding: 20px;  
 }
-.header-logo {
+
+.title-logo {
     float:left;
-    font-size:30px;
-    padding-top:40px;
-    color:white;   
+    font-size:35px;
+    position: relative;
+    padding: 15px;
+    
 }
-.header-menu li {
+.drawer-list {
+    float:right;
+}
+
+.drawer-list li {
     float:left;
     list-style:none;
-    margin-right:70px;
-    color:white;
-    font-size:30px;
-    margin-top:15px;
+    position:relative;
+    padding:20px;
+    font-size:20px;
 }
-.header-menu ul li a {
+
+.drawer-list li a {
     text-decoration: none;
-    color:white;
+    color:black;
 }
-.header-menu ul li a:hover {
-    font-weight:bold;
-    transition:font-weight 0.5s;
-}
-.header-menu {
-    float:right;
-    font-size:15px;
-    margin-top:30px;
-}
-.menu-icon {
-    display:none;
-}
-/*headerおわり*/
-/*main*/
-.message {
-    background-image:url("C:/Users/tripl/Desktop/portfolio/image/florencia-viadana-ZylDTFMHHqQ-unsplash.jpg");
-    height:700px;
-    background-size:cover;
-    background-position:10% 100%; 
-    max-width:1080px;
-    margin: 0 auto;  
-}
-/*mainおわり*/
-/*food-menu*/
-.food-menu h1 {
-    text-align: center;
-    font-size:55px;
-    margin-top:50px;
-    margin-bottom:50px;      
-}
-.food-menu {
-    width:50%;
-    margin:0 auto;
-}
-.menu {
-    display:flex;
-    align-items: center;
+/*header終わり*/
+/*top-content*/
+.top-content {
+    position:relative;
+    height:70vh;
     max-width:1080px;
     margin: 0 auto;
 }
-.menu-image {
+.top-content h1 {
+    position:absolute;
+    top:30%;
+    left:5%;
+    display:block;
+    font-size:40px;
+    font-weight:900;
+    z-index:9999;
+    letter-spacing:5px;
+}
+.top-content img {
+	display: block;
+	position: absolute;
+	bottom: 10%;
+    top:10%;
+	right: 0;
+	width: 80%;
+	object-fit: cover;
+	height: 60vh;
+}
+/*top-content終わり*/
+/*about*/
+.about {
+    display:flex;
+    text-align: center;
+    margin-top:60px;
+    background-color: rgb(247,248,250);
+    max-width:1080px;
+    margin: 0 auto;
+}
+.about-text {
     width:50%;
 }
-.menu-image img {
-    max-width:100%;  
+.about-text p {
+    font-size:10px;
 }
-.menu-text {
+.profile-image img {
     width:50%;
-    text-align: center;
+    padding-top:50px;
 }
-.menu:nth-child(even) {
-    flex-direction: row-reverse;
-}
-.menu-title {
-    font-weight: bold;
-    font-size:25px;
-    padding: 20px 0;
-}
-.menu-price {
-    margin-bottom:15px;
-    font-size:18px;
-}
-.menu-text p {
-    margin-bottom:15px;
-    font-size:30px;
-}
-.menu-detail {
-    font-size:14px;
-}
-/*food-menuおわり*/
-/*news*/
-.news h1 {
-    font-size:55px;
-    text-align: center;
-    margin-bottom:50px;
-    margin-top:50px;
-}
-.news li {
-    text-align: center;
-    line-height:80px;
-    list-style:none;
-}
-.news {
-    font-size:30px;
-}
-.news ul li a:hover {
-    font-weight:bold;
-    transition:font-weight 0.5s;
-}
-.news ul li div a {
-    text-decoration:none;
-    color: black;
+.about-text h2 {
     font-size:20px;
-    margin-left:10px;
 }
-.news ul {
+.about-text ul li {
+    list-style: none;
+    float:left;
+    padding-right: 60px;   
+}
+.about-text ul {
+    display:inline-block;
+}
+/*about終わり*/
+/*works*/
+.title {
     text-align: center;
-    margin-bottom:50px;
 }
-/*newsおわり*/
+
+.cafe-site {
+    width:70%;
+    height:100%;
+}
+.comingsoon {
+    width:70%;
+    height:100%;
+}
+.works-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    text-align: center;
+    max-width:1080px;
+    margin: 0 auto;
+}
+/*works終わり*/
+/*contact-form*/
+.contact-form {
+    text-align: center;
+}
+.contact-form a img {
+    width:5%;
+}
+/*contact-form終わり*/
 /*footer*/
 footer {
-    height:300;
-    background-color: rgb(211,175,160);
-}
-.footer-list {
     text-align: center;
-    margin-right:60px; 
+    margin-top:50px;
+    font-size:10px;
 }
-.footer-list ul {
-    text-align: center;
-    margin-top:30px;
-}
-.footer-list li {
-    padding-bottom:20px;
-    list-style:none;  
-}
-.footer-list li a {
-    text-decoration:none;
-    color:white;
-    font-size:20px;
-}
-.footer-list li a:hover {
-    
-    font-weight:bold;
-    transition:font-weight 0.5s;
-}
-footer p {
-    color:white;
-    text-align: center;
-    margin-right:50px;
-    margin-top:20px;
-}
+/*footer終わり*/
+
+
+
+
+ 
+
+
+
